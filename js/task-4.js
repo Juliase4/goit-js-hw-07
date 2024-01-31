@@ -9,16 +9,15 @@ const form = document.querySelector('.login-form');
 function formHandler(event) {
   event.preventDefault();
   const data = {
-    form: event.target,
     email: form.elements.email.value.trim(),
     password: form.elements.password.value.trim(),
   };
   if (data.email === '' || data.password === '') {
     alert('All form fields must be filled in');
+  } else {
+    console.log(data);
+    form.reset();
   }
-
-  console.log(data);
-  form.reset();
 }
 
 form.addEventListener('submit', formHandler);
