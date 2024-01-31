@@ -1,0 +1,15 @@
+body {
+  padding: 24px;
+  max-width: 408px;
+}
+
+#name-input {
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding: 8px 16px;
+  color: #2E2F42;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}

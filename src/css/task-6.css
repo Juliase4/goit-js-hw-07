@@ -1,0 +1,46 @@
+input {
+
+  width: 150px;
+  text-align: center;
+
+  border-radius: 8px;
+  border: 1px solid #808080;
+
+  color: #2E2F42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+button {
+  display: flex;
+  width: 120px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+
+  border-radius: 8px;
+  border-style: none;
+  background: #4E75FF;
+  color: white;
+}
+
+button[data-destroy] {
+  background: #FF4E4E;
+}
+
+#controls {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+div {
+  background: #F6F6FE;
+}
