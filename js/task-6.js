@@ -33,21 +33,21 @@ function createBoxes(amount) {
   amount = Number(input.value);
 
   if (isValidInput(amount)) {
+    boxesDiv.innerHTML = '';
+
     const divEl = [];
     let size = 30;
 
     for (let i = 0; i < amount; i++) {
-      size += 10;
       const div = document.createElement('div');
-
       div.style.backgroundColor = getRandomHexColor();
       div.style.width = `${size}px`;
       div.style.height = `${size}px`;
       div.style.marginRight = '30px';
       div.style.marginBottom = '30px';
+      size += 10;
       divEl.push(div);
     }
-
     boxesDiv.append(...divEl);
     input.value = '';
   }
